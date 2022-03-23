@@ -1,18 +1,10 @@
 import './App.css';
+import RequestLogsComponent from "./components/RequestLogsComponent";
 
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
+		<div className="container">
+			<RequestLogsComponent/>
 		</div>
 	);
 }
