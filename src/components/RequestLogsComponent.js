@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class RequestLogsComponent extends Component {
+export default class RequestLogsComponent extends Component {
 	constructor(props) {
 		super(props)
 
@@ -21,16 +21,16 @@ class RequestLogsComponent extends Component {
 							<th>request_id</th>
 							<th>request_reference</th>
 							<th>request_method</th>
-							<th>request_resource</th>
-							<th>request_parameters</th>
-							<th>request_headers</th>
-							<th>request_body</th>
-							<th>request_origin_ip</th>
-							<th>response_headers</th>
-							<th>response_body</th>
-							<th>error_code</th>
-							<th>error_message</th>
-							<th>error_stacktrace</th>
+							{/*<th>request_resource</th>*/}
+							{/*<th>request_parameters</th>*/}
+							{/*<th>request_headers</th>*/}
+							{/*<th>request_body</th>*/}
+							{/*<th>request_origin_ip</th>*/}
+							{/*<th>response_headers</th>*/}
+							{/*<th>response_body</th>*/}
+							{/*<th>error_code</th>*/}
+							{/*<th>error_message</th>*/}
+							{/*<th>error_stacktrace</th>*/}
 							<th>date_created</th>
 							<th>date_modified</th>
 						</tr>
@@ -66,6 +66,4 @@ class RequestLogsComponent extends Component {
 			</div>
 		);
 	}
-}
-
-export default RequestLogsComponent;
+};
