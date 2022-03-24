@@ -1,21 +1,20 @@
 import React, {Component} from 'react';
-import {Table} from "react-bootstrap";
 
 export default class RequestLogsComponent extends Component {
 	constructor(props) {
-		super(props)
+		super(props);
 
 		this.state = {
 			requestlogs: []
-		}
+		};
 	}
 
 	render() {
 		return (
 			<div>
-				<h2 className="text-center ">Request Logs</h2>
-				<div className="row">
-					<Table striped bodered>
+				<h1 className="text-center">Request Logs</h1>
+				<div class="row">
+					<table className="table table-striped table-bordered">
 
 						<thead>
 						<tr>
@@ -41,7 +40,7 @@ export default class RequestLogsComponent extends Component {
 						{
 							this.state.requestlogs.map(
 								requestlog =>
-									<tr key = {requestlog.request_id}>
+									<tr key={requestlog.request_id}>
 										<th>{requestlog.request_id}</th>
 										<td>{requestlog.request_reference}</td>
 										<td>{requestlog.request_method}</td>
@@ -61,7 +60,8 @@ export default class RequestLogsComponent extends Component {
 							)
 						}
 						</tbody>
-					</Table>
+
+					</table>
 
 				</div>
 
