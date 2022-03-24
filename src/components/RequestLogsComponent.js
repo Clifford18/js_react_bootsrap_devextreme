@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import RequesLogsService from "../services/RequesLogsService";
 
 export default class RequestLogsComponent extends Component {
 	constructor(props) {
@@ -8,12 +9,18 @@ export default class RequestLogsComponent extends Component {
 			requestlogs: []
 		};
 	}
+	componentDidMount() {
+		 RequesLogsService.getRequestLogs().then((resp) => {
+			 this.setState({requestlogs: resp.data});
+		 });
+	}
+
 
 	render() {
 		return (
 			<div>
 				<h1 className="text-center">Request Logs</h1>
-				<div class="row">
+				<div className="row">
 					<table className="table table-striped table-bordered">
 
 						<thead>
