@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import RequesLogsService from "../services/RequesLogsService";
+import RequestLogsService from "../services/RequesLogsService";
 
 export default class RequestLogsComponent extends Component {
 	constructor(props) {
@@ -10,7 +10,7 @@ export default class RequestLogsComponent extends Component {
 		};
 	}
 	componentDidMount() {
-		 RequesLogsService.getRequestLogs().then((resp) => {
+		 RequestLogsService.getRequestLogs().then((resp) => {
 			 this.setState({requestlogs: resp.data});
 		 });
 	}
