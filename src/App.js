@@ -5,7 +5,7 @@ import FooterComponent from "./components/FooterComponent";
 import Task from "./components/tasks";
 import Request from "./components/Requests";
 import Test from "./components/Test";
-import Test1 from "./components/Test1";
+import Test1, {Test2} from "./components/Test1";
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
 				<Request/>
 				<Test/>
 				<Test1/>
+				<Test2/>
 				<Task/>
 			</div>
 			<FooterComponent/>
