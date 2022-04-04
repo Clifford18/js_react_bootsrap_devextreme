@@ -9,6 +9,7 @@ import Test1, {Test2} from "./components/Test1";
 import LoginForm from "./components/Login";
 import Axios_test_w from "./components/axios_test_w";
 import Nav_app from "./nav/Nav_app";
+import ScrollViewApp from "./scrollview/ScrollApp";
 
 
 function App() {
@@ -16,16 +17,20 @@ function App() {
 		<div>
 			<HeaderComponent/>
 			<div className="container">
-				<LoginForm/>
-				<RequestLogsComponent/>
-				<Request/>
-				{/*<Axios_test_w/>*/}
 
-				<Test/>
-				<Test1/>
-				<Test2/>
-				<Task/>
-				<Nav_app/>
+				<ScrollViewApp/>
+
+				{/*<LoginForm/>*/}
+				{/*<RequestLogsComponent/>*/}
+				{/*<Request/>*/}
+				{/*/!*<Axios_test_w/>*!/*/}
+
+				{/*<Test/>*/}
+				{/*<Test1/>*/}
+				{/*<Test2/>*/}
+				{/*<Task/>*/}
+				{/*<Nav_app/>*/}
+
 
 			</div>
 			<FooterComponent/>
