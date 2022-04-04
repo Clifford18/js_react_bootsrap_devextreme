@@ -46,6 +46,7 @@ export default class Test1 extends React.Component {
 						width={140}
 						caption={'Request Method'}
 					/>
+					
 					<Column
 						dataField={'request_headers'}
 						width={140}
