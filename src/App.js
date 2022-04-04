@@ -8,6 +8,7 @@ import Test from "./components/Test";
 import Test1, {Test2} from "./components/Test1";
 import LoginForm from "./components/Login";
 import Axios_test_w from "./components/axios_test_w";
+import Nav_app from "./nav/Nav_app";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 				<Test1/>
 				<Test2/>
 				<Task/>
+				<Nav_app/>
 
 			</div>
 			<FooterComponent/>
