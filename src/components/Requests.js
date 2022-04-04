@@ -8,8 +8,6 @@ import DataGrid, {
 	Lookup
 } from 'devextreme-react/data-grid';
 
-const REQUEST_API_BASE_URL = 'http://localhost:9081/api/rest/request-logs';
-
 
 
 export default function Request() {
@@ -20,6 +18,8 @@ export default function Request() {
 			<DataGrid
 				className={'dx-card wide-card'}
 				dataSource={dataSource}
+				keyExpr="request_id"
+
 				showBorders={false}
 				focusedRowEnabled={true}
 				defaultFocusedRowIndex={0}
@@ -30,40 +30,40 @@ export default function Request() {
 				<Pager showPageSizeSelector={true} showInfo={true}/>
 				<FilterRow visible={true}/>
 
-				<Column dataField={'request_id'} width={90} hidingPriority={2}/>
-				<Column
-					dataField={'request_reference'}
-					width={190}
-					caption={'Request Reference'}
-					hidingPriority={8}
-				/>
-				<Column
-					dataField={'request_method'}
-					caption={'Request Method'}
-					hidingPriority={6}
-				/>
-				<Column
-					dataField={'request_parameters'}
-					caption={'Request Parameters'}
-					allowSorting={false}
-					hidingPriority={7}
-				/>
-				<Column
-					dataField={'date_created'}
-					caption={'Date Created'}
-					dataType={'date'}
-					hidingPriority={4}
-				/>
-				<Column
-					dataField={'date_modified'}
-					caption={'Date Modified'}
-					dataType={'date'}
-					hidingPriority={4}
-				/>
+				{/*<Column dataField={'request_id'} width={90} hidingPriority={2}/>*/}
+				{/*<Column*/}
+				{/*	dataField={'request_reference'}*/}
+				{/*	width={190}*/}
+				{/*	caption={'Request Reference'}*/}
+				{/*	hidingPriority={8}*/}
+				{/*/>*/}
+				{/*<Column*/}
+				{/*	dataField={'request_method'}*/}
+				{/*	caption={'Request Method'}*/}
+				{/*	hidingPriority={6}*/}
+				{/*/>*/}
+				{/*<Column*/}
+				{/*	dataField={'request_parameters'}*/}
+				{/*	caption={'Request Parameters'}*/}
+				{/*	allowSorting={false}*/}
+				{/*	hidingPriority={7}*/}
+				{/*/>*/}
+				{/*<Column*/}
+				{/*	dataField={'date_created'}*/}
+				{/*	caption={'Date Created'}*/}
+				{/*	dataType={'date'}*/}
+				{/*	hidingPriority={4}*/}
+				{/*/>*/}
+				{/*<Column*/}
+				{/*	dataField={'date_modified'}*/}
+				{/*	caption={'Date Modified'}*/}
+				{/*	dataType={'date'}*/}
+				{/*	hidingPriority={4}*/}
+				{/*/>*/}
 			</DataGrid>
 		</React.Fragment>
 	);
 }
 
-const dataSource = 'http://localhost:9081/api/rest/request-logs';
+const dataSource = 'http://172.20.102.33:9081/api/rest/request-logs';
 
