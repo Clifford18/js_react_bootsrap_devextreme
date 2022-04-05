@@ -1,4 +1,4 @@
-const employees1 =[
+const requests =[
 	{
 		request_id: 1,
 		request_reference: "request_reference - 1",
@@ -173,6 +173,6 @@ const employees1 =[
 
 export default {
 	getEmployees1() {
-		return employees1;
+		return requests;
 	}
 }
