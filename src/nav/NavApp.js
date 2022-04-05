@@ -2,9 +2,9 @@ import React from 'react';
 
 import TreeView from 'devextreme-react/tree-view';
 import TabPanel from 'devextreme-react/tab-panel';
-import { continents } from './nav_data.js';
+import { continents } from './NavData.js';
 
-class Nav_app extends React.Component {
+class NavApp extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -119,4 +119,4 @@ function renderPanelItem(city) {
 	);
 }
 
-export default Nav_app;
+export default NavApp;

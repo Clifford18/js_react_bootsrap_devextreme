@@ -3,12 +3,11 @@ import React from 'react';
 import 'devextreme/dist/css/dx.light.css';
 
 import DataGrid, {Pager, Paging} from 'devextreme-react/data-grid';
-import SelectBox from 'devextreme-react/select-box';
 
-import service from '../services/data1.js';
+import service from '../services/RequestServiceData.js';
 import {Column, FilterRow} from "devextreme-react/gantt";
 
-export default class Test1 extends React.Component {
+export default class RequestsDataComponent extends React.Component {
 	constructor(props) {
 		super(props);
 		this.requests = service.getEmployees1();
@@ -21,7 +20,7 @@ export default class Test1 extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<h1 className={'content-block'}>Request Logs</h1>
+				<h1 className={'content-block'}>RequestsData</h1>
 				<DataGrid
 					className={'dx-card wide-card'}
 					dataSource={this.requests}
@@ -97,10 +96,10 @@ export default class Test1 extends React.Component {
 	}
 }
 
-export class Test2 extends React.Component {
+export class RequestsDataTest extends React.Component {
 	constructor(props) {
 		super(props);
-		this.employees = service.getEmployees1();
+		this.requests = service.getEmployees1();
 	}
 
 	getDisplayExpr(item) {
@@ -110,10 +109,10 @@ export class Test2 extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<h1 className={'content-block'}>Request Logs</h1>
+				<h1 className={'content-block'}>RequestsDataTest</h1>
 				<DataGrid
 					className={'dx-card wide-card'}
-					dataSource={this.employees}
+					dataSource={this.requests}
 					keyExpr="request_id"
 					showBorders={false}
 					focusedRowEnabled={true}
