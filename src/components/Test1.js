@@ -5,7 +5,7 @@ import 'devextreme/dist/css/dx.light.css';
 import DataGrid, {Pager, Paging} from 'devextreme-react/data-grid';
 import SelectBox from 'devextreme-react/select-box';
 
-import service from './data1.js';
+import service from '../services/data1.js';
 import {Column, FilterRow} from "devextreme-react/gantt";
 
 export default class Test1 extends React.Component {
