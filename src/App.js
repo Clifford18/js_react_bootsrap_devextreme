@@ -18,18 +18,18 @@ function App() {
 			<HeaderComponent/>
 			<div className="container">
 
-				<ScrollViewApp/>
+				{/*<ScrollViewApp/>*/}
 
-				{/*<LoginForm/>*/}
-				{/*<RequestLogsComponent/>*/}
-				{/*<Request/>*/}
-				{/*/!*<Axios_test_w/>*!/*/}
+				<LoginForm/>
+				<RequestLogsComponent/>
+				<Request/>
+				{/*<Axios_test_w/>*/}
 
-				{/*<Test/>*/}
-				{/*<Test1/>*/}
-				{/*<Test2/>*/}
-				{/*<Task/>*/}
-				{/*<Nav_app/>*/}
+				<Test/>
+				<Test1/>
+				<Test2/>
+				<Task/>
+				<Nav_app/>
 
 
 			</div>
