@@ -1,11 +1,11 @@
 import './App.css';
 import HeaderComponent from "./components/HeaderComponent";
 import FooterComponent from "./components/FooterComponent";
-import Task from "./components/tasks";
+import Task from "./components/Tasks";
 import RequestsDataComponent, {RequestsDataTest} from "./components/RequestsDataComponent";
-import Axios_test_w from "./components/axios_test_w";
 import NavApp from "./nav/NavApp";
 import ScrollViewApp from "./scrollview/ScrollApp";
+import {AxiosTest} from "./components/AxiosTest";
 
 
 function App() {
@@ -16,11 +16,11 @@ function App() {
 
 				{/*<ScrollViewApp/>*/}
 
-				{/*<Axios_test_w/>*/}
 				<RequestsDataComponent/>
 				<RequestsDataTest/>
 				<Task/>
 				<NavApp/>
+				<AxiosTest/>
 
 
 			</div>
