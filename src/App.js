@@ -6,6 +6,7 @@ import RequestsDataComponent, {RequestsDataTest} from "./components/RequestsData
 import NavApp from "./nav/NavApp";
 import ScrollViewApp from "./scrollview/ScrollApp";
 import {AxiosTest} from "./components/AxiosTest";
+import NavAppTest from "./NavTest/NavAppTest";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 				<Task/>
 				<NavApp/>
 				<AxiosTest/>
+				<NavAppTest/>
 
 
 			</div>
