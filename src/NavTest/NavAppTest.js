@@ -38,18 +38,15 @@ export default class NavAppTest extends React.Component {
 						</div>
 					</div>
 
-
-					<div className="sub-title">Largest cities</div>
-
-					<TabPanel
-						itemTitleRender={renderPanelItemTitle}
-						itemRender={renderPanelItem}
-						selectedIndex={this.state.tabPanelIndex}
-						onSelectionChanged={this.handleTabPanelSelectionChange}
-						dataSource={this.state.citiesData}
-						animationEnabled={true}
-						id="tabpanel"
-					/>
+					{/*<TabPanel*/}
+					{/*	itemTitleRender={renderPanelItemTitle}*/}
+					{/*	itemRender={renderPanelItem}*/}
+					{/*	selectedIndex={this.state.tabPanelIndex}*/}
+					{/*	onSelectionChanged={this.handleTabPanelSelectionChange}*/}
+					{/*	dataSource={this.state.citiesData}*/}
+					{/*	animationEnabled={true}*/}
+					{/*	id="tabpanel"*/}
+					{/*/>*/}
 				</div>
 			</div>
 		);
