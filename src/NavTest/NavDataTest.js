@@ -1,6 +1,6 @@
 export const REQUESTLOGSTYPES = [{
 	id: '1',
-	text: 'Request Logs',
+	text: 'REQUEST LOGS',
 	expanded: true,
 	items: [{
 		id: '1_1',
