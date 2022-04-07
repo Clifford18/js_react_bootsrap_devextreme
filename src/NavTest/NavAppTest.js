@@ -10,8 +10,8 @@ export default class NavAppTest extends React.Component {
 
 		this.state = {
 			tabPanelIndex: 0,
-			countryData: REQUESTLOGSTYPES[0].items[0],
-			citiesData: REQUESTLOGSTYPES[0].items[0].cities,
+			requestData: REQUESTLOGSTYPES[0].items[0],
+			optionsData: REQUESTLOGSTYPES[0].items[0].options,
 		};
 
 		this.handleTreeViewSelectionChange = this.handleTreeViewSelectionChange.bind(this);
@@ -19,7 +19,7 @@ export default class NavAppTest extends React.Component {
 	}
 
 	render() {
-		const { countryData } = this.state;
+		const { requestData } = this.state;
 		return (
 			<div className="container">
 				<div className="left-content">
@@ -33,32 +33,32 @@ export default class NavAppTest extends React.Component {
 				<div className="right-content">
 					<div className="title-container">
 						<div>
-							<div className="country-name">{countryData.fullName}</div>
-							<div>{countryData.description}</div>
+							<div className="country-name">{requestData.fullName}</div>
+							<div>{requestData.description}</div>
 						</div>
 					</div>
 
-					{/*<TabPanel*/}
-					{/*	itemTitleRender={renderPanelItemTitle}*/}
-					{/*	itemRender={renderPanelItem}*/}
-					{/*	selectedIndex={this.state.tabPanelIndex}*/}
-					{/*	onSelectionChanged={this.handleTabPanelSelectionChange}*/}
-					{/*	dataSource={this.state.citiesData}*/}
-					{/*	animationEnabled={true}*/}
-					{/*	id="tabpanel"*/}
-					{/*/>*/}
+					<TabPanel
+						itemTitleRender={renderPanelItemTitle}
+						itemRender={renderPanelItem}
+						selectedIndex={this.state.tabPanelIndex}
+						onSelectionChanged={this.handleTabPanelSelectionChange}
+						dataSource={this.state.optionsData}
+						animationEnabled={true}
+						id="tabpanel"
+					/>
 				</div>
 			</div>
 		);
 	}
 
 	handleTreeViewSelectionChange(e) {
-		const countryData = e.itemData;
-		if (countryData.cities) {
+		const requestData = e.itemData;
+		if (requestData.options) {
 			this.setState({
 				tabPanelIndex: 0,
-				countryData: e.itemData,
-				citiesData: countryData.cities,
+				requestData: e.itemData,
+				optionsData: requestData.options,
 			});
 		}
 	}
@@ -77,7 +77,6 @@ function renderPanelItemTitle(item) {
 function renderPanelItem(city) {
 	return (
 		<React.Fragment>
-			<img className="flag" src={city.flag} />
 			<div className="right-content">
 				<div>
 					<b>{(city.capital) ? 'Capital. ' : ''}</b>{city.description}
