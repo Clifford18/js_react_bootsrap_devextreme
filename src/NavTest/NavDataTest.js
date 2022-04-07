@@ -92,7 +92,7 @@ export const REQUESTLOGSTYPES = [{
 				density: '6,891',
 				description: 'Kuala Lumpur, officially the Federal Territory of Kuala Lumpur, or commonly KL, is the largest city of Malaysia. It is located in Klang Valley.',
 				capital: true,
-				flag: 'images/flags/KualaLumpur.svg',
+				flag: 'images/flags/KualaLumpur.svg'
 			}, {
 				id: '1_3_2',
 				text: 'George Town',
@@ -100,7 +100,7 @@ export const REQUESTLOGSTYPES = [{
 				area: '305.77',
 				density: '2,372',
 				description: 'George Town, the capital city of the Malaysian state of Penang, is located at the northeastern tip of Penang Island.',
-				flag: 'images/flags/GeorgeTown.svg',
+				flag: 'images/flags/GeorgeTown.svg'
 			}, {
 				id: '1_3_3',
 				text: 'Ipoh',
@@ -108,8 +108,41 @@ export const REQUESTLOGSTYPES = [{
 				area: '643',
 				density: '1,023',
 				description: 'Ipoh is the capital of the Malaysian state of Perak. It stands on the banks of the Kinta River.',
-				flag: 'images/flags/Ipoh.svg',
+				flag: 'images/flags/Ipoh.svg'
 			}]
 		}
 	]
-}];
+},
+	{
+		id: '2',
+		text: 'Profile',
+		items: [{
+			id: '2_1',
+			text: 'My Profile',
+			fullName: 'Japan',
+			description: 'Japan is a sovereign island nation in East Asia. Located in the Pacific Ocean, it lies off the eastern coast of the Asian mainland and stretches from the Sea of Okhotsk in the north to the East China Sea and China in the southwest.',
+			area: '377,972',
+			population: '126,672,000',
+			gdp: '5,420',
+			flag: 'images/flags/Japan.svg',
+			cities: [{
+				id: '2_1_1',
+				text: 'About Me ',
+				population: '13,617,445',
+				area: '2,187.66',
+				density: '6,224.66',
+				description: 'The Greater Tokyo Area is the most populous metropolitan area in the world. The city is located in the Kantō region on the southeastern side of the main island Honshu and includes the Izu Islands and Ogasawara Islands.',
+				capital: true,
+				flag: 'images/flags/Tokyo.svg'
+			}, {
+				id: '2_1_2',
+				text: 'Reset Password',
+				population: '3,732,616',
+				area: '437.38',
+				density: '8,534.03',
+				description: 'Yokohama is the second largest city in Japan by population, after Tokyo, and the most populous municipality of Japan. It lies on Tokyo Bay, south of Tokyo, in the Kantō region of the main island of Honshu.',
+				flag: 'images/flags/Yokohama.svg'
+			}]
+		}]
+	}
+];
