@@ -5,8 +5,8 @@ export const REQUESTLOGSTYPES = [{
 	items: [{
 		id: '1_1',
 		text: 'ALL LOGS',
-		fullName: 'Arab Republic of Egypt',
-		description: 'Egypt is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia by a land bridge the Sinai Peninsula forms.',
+		fullName: 'All Enterprise Service Bus Logs',
+		description: 'This is a combination of request log made both to the ATM Bridge and Members portal and their corresponding response',
 		area: '1,010,407.87',
 		population: '94,798,827',
 		gdp: '1,173',
@@ -42,8 +42,8 @@ export const REQUESTLOGSTYPES = [{
 		{
 			id: '1_2',
 			text: 'ATM Bridge Logs',
-			fullName: 'Republic of South Africa',
-			description: 'South Africa is the southernmost country in Africa. It is bounded on the south by 2,798 kilometres (1,739 mi) of coastline of Southern Africa stretching along the South Atlantic and Indian Oceans.',
+			fullName: 'ATM Bridge Logs',
+			description: 'These are request logs made only to the ATM Bridge and their corresponding response',
 			area: '1,221,037',
 			population: '54,956,900',
 			gdp: '742.461',
@@ -78,8 +78,8 @@ export const REQUESTLOGSTYPES = [{
 		{
 			id: '1_3',
 			text: 'Members Portal Logs',
-			fullName: 'Malaysia',
-			description: 'Malaysia is a federal constitutional monarchy located in Southeast Asia.',
+			fullName: 'Members Portal Request Logs',
+			description: 'These are request logs made only to the Members and their corresponding response',
 			area: '330,803',
 			population: '31,708,000',
 			gdp: '913.593',
