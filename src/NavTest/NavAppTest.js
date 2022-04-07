@@ -32,27 +32,12 @@ export default class NavAppTest extends React.Component {
 				</div>
 				<div className="right-content">
 					<div className="title-container">
-						<img className="flag" src={countryData.flag} />
 						<div>
 							<div className="country-name">{countryData.fullName}</div>
 							<div>{countryData.description}</div>
 						</div>
 					</div>
 
-					<div className="stats">
-						<div>
-							<div className="sub-title">Area, km<sup>2</sup></div>
-							<div className="stat-value">{countryData.area}</div>
-						</div>
-						<div>
-							<div className="sub-title">Population</div>
-							<div className="stat-value">{countryData.population}</div>
-						</div>
-						<div>
-							<div className="sub-title">GDP, billion</div>
-							<div className="stat-value">{`$${countryData.gdp}`}</div>
-						</div>
-					</div>
 
 					<div className="sub-title">Largest cities</div>
 
