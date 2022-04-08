@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollView from 'devextreme-react/scroll-view';
 import service from './scrolldata';
-import {AxiosTest} from "../components/AxiosTest";
+import Task from "../components/Tasks";
 
 export default class ScrollViewApp extends React.Component {
 	constructor(props) {
@@ -30,7 +30,7 @@ export default class ScrollViewApp extends React.Component {
 							showScrollbar={showScrollBarMode}
 							scrollByThumb={scrollByThumb}>
 					<div className="text-content">
-						<AxiosTest/>
+						<Task/>
 					</div>
 				</ScrollView>
 
