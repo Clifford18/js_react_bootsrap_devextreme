@@ -33,7 +33,7 @@ export default class NavAppTest extends React.Component {
 				<div className="right-content">
 					<div className="title-container">
 						<div>
-							<div className="country-name">{requestData.fullName}</div>
+							<div className="request-data-type">{requestData.fullName}</div>
 							<div>{requestData.description}</div>
 						</div>
 					</div>
