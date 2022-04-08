@@ -34,7 +34,7 @@ class NavApp extends React.Component {
 					<div className="title-container">
 						<img className="flag" src={countryData.flag} />
 						<div>
-							<div className="country-name">{countryData.fullName}</div>
+							<div className="request-data-type">{countryData.fullName}</div>
 							<div>{countryData.description}</div>
 						</div>
 					</div>
