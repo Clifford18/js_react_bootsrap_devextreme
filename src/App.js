@@ -7,22 +7,25 @@ import NavApp from "./nav/NavApp";
 import ScrollViewApp from "./scrollview/ScrollApp";
 import {AxiosTest} from "./components/AxiosTest";
 import NavAppTest from "./NavTest/NavAppTest";
+import ToolbarApp from "./toolbar/Toolbar";
 
 
 function App() {
 	return (
 		<div>
+			<ToolbarApp/>
 			<HeaderComponent/>
 			<div className="container">
 
 				<ScrollViewApp/>
 
-				{/*<RequestsDataComponent/>*/}
-				{/*<RequestsDataTest/>*/}
-				{/*<Task/>*/}
-				{/*<NavApp/>*/}
-				{/*<AxiosTest/>*/}
-				{/*<NavAppTest/>*/}
+				<RequestsDataComponent/>
+				<RequestsDataTest/>
+				<Task/>
+				<NavApp/>
+				<AxiosTest/>
+				<NavAppTest/>
+				<ToolbarApp/>
 
 
 			</div>
