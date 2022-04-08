@@ -1,16 +1,15 @@
 import React from 'react';
 import ScrollView from 'devextreme-react/scroll-view';
-import SelectBox from 'devextreme-react/select-box';
-import CheckBox from 'devextreme-react/check-box';
 import service from './scrolldata';
+import {AxiosTest} from "../components/AxiosTest";
 
 export default class ScrollViewApp extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			showScrollBarMode: 'onScroll',
-			pullDown: false,
+			showScrollBarMode: 'always',
+			pullDown: true,
 			scrollByContent: true,
 			scrollByThumb: true,
 			content: service.getContent(),
@@ -41,50 +40,10 @@ export default class ScrollViewApp extends React.Component {
 							showScrollbar={showScrollBarMode}
 							scrollByThumb={scrollByThumb}>
 					<div className="text-content">
-						{content}
+						<AxiosTest/>
 					</div>
 				</ScrollView>
-				<div className="options">
-					<div className="caption">Options</div>
-					<div className="option">
-						<span>Show scrollbar: </span>
-						<SelectBox
-							items={showScrollbarModes}
-							valueExpr="value"
-							displayExpr="text"
-							value={showScrollBarMode}
-							onValueChanged={this.scrollbarModelValueChanged}
-						/>
-					</div>
-					<div className="option">
-						<CheckBox
-							text="Update content on the ReachBottom event"
-							defaultValue={true}
-							onValueChanged={this.reachBottomValueChanged}
-						/>
-					</div>
-					<div className="option">
-						<CheckBox
-							text="Update content on the PullDown event"
-							value={pullDown}
-							onValueChanged={this.pullDownValueChanged}
-						/>
-					</div>
-					<div className="option">
-						<CheckBox
-							text="Scroll by content"
-							value={scrollByContent}
-							onValueChanged={this.scrollByContentValueChanged}
-						/>
-					</div>
-					<div className="option">
-						<CheckBox
-							text="Scroll by thumb"
-							value={scrollByThumb}
-							onValueChanged={this.scrollByThumbValueChanged}
-						/>
-					</div>
-				</div>
+
 			</div>
 		);
 	}
@@ -140,19 +99,3 @@ export default class ScrollViewApp extends React.Component {
 		}, 500);
 	}
 }
-
-const showScrollbarModes = [{
-	text: 'On Scroll',
-	value: 'onScroll',
-}, {
-	text: 'On Hover',
-	value: 'onHover',
-}, {
-	text: 'Always',
-	value: 'always',
-}, {
-	text: 'Never',
-	value: 'never',
-}];
-
-
