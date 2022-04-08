@@ -15,14 +15,14 @@ function App() {
 			<HeaderComponent/>
 			<div className="container">
 
-				{/*<ScrollViewApp/>*/}
+				<ScrollViewApp/>
 
-				<RequestsDataComponent/>
-				<RequestsDataTest/>
-				<Task/>
-				<NavApp/>
-				<AxiosTest/>
-				<NavAppTest/>
+				{/*<RequestsDataComponent/>*/}
+				{/*<RequestsDataTest/>*/}
+				{/*<Task/>*/}
+				{/*<NavApp/>*/}
+				{/*<AxiosTest/>*/}
+				{/*<NavAppTest/>*/}
 
 
 			</div>
