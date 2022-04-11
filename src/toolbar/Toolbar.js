@@ -7,7 +7,7 @@ import 'devextreme/ui/select_box';
 
 
 function renderLabel() {
-	return <div className="toolbar-label"><b>Request Logs</b></div>;
+	return <div className="toolbar-label"><b>SKY REQUEST LOGS APP</b></div>;
 }
 
 export default class ToolbarApp extends React.Component {
@@ -21,7 +21,7 @@ export default class ToolbarApp extends React.Component {
 
 					<Item locateInMenu="always"
 						  widget="dxButton"
-						  options={saveButtonOptions} />
+						  options={logoutButton} />
 
 				</Toolbar>
 
@@ -30,7 +30,7 @@ export default class ToolbarApp extends React.Component {
 	}
 }
 
-const saveButtonOptions = {
+const logoutButton = {
 	text: 'Logout',
 	onClick: () => {
 		notify('Succefully logged out!');
