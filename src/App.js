@@ -15,16 +15,20 @@ function App() {
 		<div>
 			<HeaderComponent/>
 			<div className="container">
-
 				<ScrollViewApp/>
+			</div>
+			<div className="container">
+				<NavAppTest/>
 
+
+			</div>
+			<div>
 				<RequestsDataComponent/>
 				<RequestsDataTest/>
 				<Task/>
 				<NavApp/>
 				<AxiosTest/>
 				<NavAppTest/>
-
 			</div>
 			<FooterComponent/>
 
