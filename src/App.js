@@ -13,7 +13,6 @@ import ToolbarApp from "./toolbar/Toolbar";
 function App() {
 	return (
 		<div>
-			<ToolbarApp/>
 			<HeaderComponent/>
 			<div className="container">
 
