@@ -24,8 +24,6 @@ function App() {
 				<NavApp/>
 				<AxiosTest/>
 				<NavAppTest/>
-				<ToolbarApp/>
-
 
 			</div>
 			<FooterComponent/>
