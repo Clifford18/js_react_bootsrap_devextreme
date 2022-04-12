@@ -14,9 +14,10 @@ export default function Task() {
 			<h2 className={'content-block'}>Tasks</h2>
 
 			<DataGrid
+				id = "gridContainer"
 				className={'dx-card wide-card'}
 				dataSource={dataSource}
-				showBorders={false}
+				showBorders={true}
 				focusedRowEnabled={true}
 				defaultFocusedRowIndex={0}
 				columnAutoWidth={true}
@@ -25,6 +26,7 @@ export default function Task() {
 				<Paging defaultPageSize={10}/>
 				<Pager showPageSizeSelector={true} showInfo={true}/>
 				<FilterRow visible={true}/>
+
 
 				<Column dataField={'Task_ID'} width={60} hidingPriority={2}/>
 				<Column
