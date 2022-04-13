@@ -38,6 +38,7 @@ export default class NavAppTest extends React.Component {
 						</div>
 					</div>
 
+
 					<TabPanel
 						itemTitleRender={renderPanelItemTitle}
 						itemRender={renderPanelItem}
@@ -82,18 +83,7 @@ function renderPanelItem(city) {
 					<b>{(city.capital) ? 'Capital. ' : ''}</b>{city.description}
 				</div>
 				<div className="stats">
-					<div>
-						<div>Population</div>
-						<div><b>{city.population} people</b></div>
-					</div>
-					<div>
-						<div>Area</div>
-						<div><b>{city.area} km<sup>2</sup></b></div>
-					</div>
-					<div>
-						<div>Density</div>
-						<div><b>{city.density}/km<sup>2</sup></b></div>
-					</div>
+
 				</div>
 			</div>
 		</React.Fragment>
