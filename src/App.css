@@ -32,16 +32,11 @@
 .right-content {
   position: absolute;
   right: 0;
-  left: 220px;
+  left: 300px;
   top: 0;
   height: 100%;
 }
 
-sup {
-  font-size: 0.8em;
-  vertical-align: super;
-  line-height: 0;
-}
 
 .right-content .sub-title {
   font-size: 120%;
@@ -49,6 +44,7 @@ sup {
 }
 
 .title-container {
+  margin-top: 30px;
   margin-left: 204px;
   min-height: 140px;
   margin-bottom: 10px;
@@ -101,11 +97,7 @@ sup {
   border-top: 1px solid rgba(191, 191, 191, 0.25);
 }
 
-#tabpanel .stats > div {
-  padding: 7px 0;
-  text-align: left;
-  border: 0;
-}
+
 
 
 .left-content .dx-treeview-node.dx-state-selected > .dx-item > .dx-item-content {
