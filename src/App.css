@@ -49,6 +49,7 @@ sup {
 }
 
 .title-container {
+  margin-left: 204px;
   min-height: 140px;
   margin-bottom: 10px;
 }
@@ -60,9 +61,6 @@ sup {
   margin-bottom: 10px;
 }
 
-.title-container > div:not(.flag) {
-  margin-left: 204px;
-}
 
 .stats {
   display: table;
@@ -70,23 +68,6 @@ sup {
   margin-bottom: 20px;
 }
 
-.stats > div {
-  display: table-cell;
-  text-align: center;
-  border: 1px solid rgba(191, 191, 191, 0.25);
-  padding: 20px 0 25px;
-  width: 33%;
-}
-
-.stats > div:first-child,
-.stats > div:last-child {
-  border-right-width: 0;
-  border-left-width: 0;
-}
-
-.stats .stat-value {
-  font-size: 200%;
-}
 
 #tabpanel {
   margin-top: 10px;
@@ -126,13 +107,6 @@ sup {
   border: 0;
 }
 
-#tabpanel .stats > div:first-child {
-  width: 40%;
-}
-
-#tabpanel .stats > div:not(:first-child) {
-  width: 30%;
-}
 
 .left-content .dx-treeview-node.dx-state-selected > .dx-item > .dx-item-content {
   font-weight: 500;
