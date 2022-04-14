@@ -7,8 +7,6 @@ import NavApp from "./nav/NavApp";
 import ScrollViewApp from "./scrollview/ScrollApp";
 import {AxiosTest} from "./components/AxiosTest";
 import NavAppTest from "./NavTest/NavAppTest";
-import ToolbarApp from "./toolbar/Toolbar";
-import ClickChange from "./ClickChange/ClickChange";
 
 
 function App() {
@@ -31,7 +29,6 @@ function App() {
 				<NavApp/>
 				<AxiosTest/>
 				<NavAppTest/>
-				<ClickChange/>
 			</div>
 			<FooterComponent/>
 
