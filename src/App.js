@@ -4,7 +4,7 @@ import FooterComponent from "./components/FooterComponent";
 import Task from "./components/Tasks";
 import RequestsDataComponent, {RequestsDataTest} from "./components/RequestsDataComponent";
 import NavApp from "./nav/NavApp";
-import ScrollViewApp from "./scrollview/ScrollApp";
+import ScrollViewApp from "./scrollview/ScrollViewApp";
 import {AxiosTest} from "./components/AxiosTest";
 import NavAppTest from "./NavTest/NavAppTest";
 
