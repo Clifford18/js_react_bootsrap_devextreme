@@ -2,7 +2,8 @@ import React from 'react';
 
 import TreeView from 'devextreme-react/tree-view';
 import TabPanel from 'devextreme-react/tab-panel';
-import { REQUESTLOGSTYPES } from './NavDataTest.js';
+import {REQUESTLOGSTYPES} from './NavDataTest.js';
+import Task from "../components/Tasks";
 
 export default class NavAppTest extends React.Component {
 	constructor(props) {
@@ -11,7 +12,7 @@ export default class NavAppTest extends React.Component {
 		this.state = {
 			tabPanelIndex: 0,
 			requestData: REQUESTLOGSTYPES[0].items[0],
-			optionsData: REQUESTLOGSTYPES[0].items[0].options,
+			optionsData: REQUESTLOGSTYPES[0].items[0].options
 		};
 
 		this.handleTreeViewSelectionChange = this.handleTreeViewSelectionChange.bind(this);
@@ -19,7 +20,7 @@ export default class NavAppTest extends React.Component {
 	}
 
 	render() {
-		const { requestData } = this.state;
+		const {requestData} = this.state;
 		return (
 			<div className="container">
 				<div className="left-content">
@@ -38,16 +39,16 @@ export default class NavAppTest extends React.Component {
 						</div>
 					</div>
 
-
-					<TabPanel
-						itemTitleRender={renderPanelItemTitle}
-						itemRender={renderPanelItem}
-						selectedIndex={this.state.tabPanelIndex}
-						onSelectionChanged={this.handleTabPanelSelectionChange}
-						dataSource={this.state.optionsData}
-						animationEnabled={true}
-						id="tabpanel"
-					/>
+					<Task/>
+					{/*<TabPanel*/}
+					{/*	itemTitleRender={renderPanelItemTitle}*/}
+					{/*	itemRender={renderPanelItem}*/}
+					{/*	selectedIndex={this.state.tabPanelIndex}*/}
+					{/*	onSelectionChanged={this.handleTabPanelSelectionChange}*/}
+					{/*	dataSource={this.state.optionsData}*/}
+					{/*	animationEnabled={true}*/}
+					{/*	id="tabpanel"*/}
+					{/*/>*/}
 				</div>
 			</div>
 		);
@@ -59,14 +60,14 @@ export default class NavAppTest extends React.Component {
 			this.setState({
 				tabPanelIndex: 0,
 				requestData: e.itemData,
-				optionsData: requestData.options,
+				optionsData: requestData.options
 			});
 		}
 	}
 
 	handleTabPanelSelectionChange(e) {
 		this.setState({
-			tabPanelIndex: e.value,
+			tabPanelIndex: e.value
 		});
 	}
 }
