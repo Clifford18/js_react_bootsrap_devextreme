@@ -3,7 +3,6 @@ import React from 'react';
 import TreeView from 'devextreme-react/tree-view';
 import TabPanel from 'devextreme-react/tab-panel';
 import {REQUESTLOGSTYPES} from './NavDataTest.js';
-import Task from "../components/Tasks";
 import DataGrid, {Column, FilterRow, Lookup, Pager, Paging} from "devextreme-react/data-grid";
 
 export default class NavAppTest extends React.Component {
@@ -13,7 +12,8 @@ export default class NavAppTest extends React.Component {
 		this.state = {
 			tabPanelIndex: 0,
 			requestData: REQUESTLOGSTYPES[0].items[0],
-			optionsData: REQUESTLOGSTYPES[0].items[0].options
+			optionsData: REQUESTLOGSTYPES[0].items[0].options,
+			dataSource : requestDataSource
 		};
 
 		this.handleTreeViewSelectionChange = this.handleTreeViewSelectionChange.bind(this);
@@ -22,6 +22,7 @@ export default class NavAppTest extends React.Component {
 
 	render() {
 		const {requestData} = this.state;
+		const {dataSource} = this.state;
 		return (
 			<div className="container">
 				<div className="left-content">
@@ -43,7 +44,7 @@ export default class NavAppTest extends React.Component {
 					<DataGrid
 						id = "gridContainer"
 						className={'dx-card wide-card'}
-						dataSource={requestDataSource}
+						dataSource={dataSource}
 						showBorders={true}
 						focusedRowEnabled={true}
 						defaultFocusedRowIndex={0}
@@ -126,7 +127,9 @@ export default class NavAppTest extends React.Component {
 			this.setState({
 				tabPanelIndex: 0,
 				requestData: e.itemData,
-				optionsData: requestData.options
+				optionsData: requestData.options,
+				dataSource : e.itemData
+
 			});
 		}
 	}
