@@ -11,7 +11,7 @@ export default class NavAppTest extends React.Component {
 		this.state = {
 			requestData: REQUESTLOGSTYPES[0].items[0],
 			optionsData: REQUESTLOGSTYPES[0].items[0].options,
-			dataSource : requestDataSource
+			requestGridDataSource : requestDataSource
 		};
 
 		this.handleTreeViewSelectionChange = this.handleTreeViewSelectionChange.bind(this);
@@ -19,7 +19,7 @@ export default class NavAppTest extends React.Component {
 
 	render() {
 		const {requestData} = this.state;
-		const {dataSource} = this.state;
+		const {requestGridDataSource} = this.state;
 		return (
 			<div className="container">
 				<div className="left-content">
@@ -41,12 +41,13 @@ export default class NavAppTest extends React.Component {
 					<DataGrid
 						id = "gridContainer"
 						className={'dx-card wide-card'}
-						dataSource={dataSource}
+						dataSource={requestGridDataSource}
 						showBorders={true}
 						focusedRowEnabled={true}
 						defaultFocusedRowIndex={0}
 						columnAutoWidth={true}
 						columnHidingEnabled={true}
+						onItemSelectionChanged={this.handleTreeViewSelectionChange}
 					>
 						<Paging defaultPageSize={10}/>
 						<Pager showPageSizeSelector={true} showInfo={true}/>
@@ -120,11 +121,12 @@ export default class NavAppTest extends React.Component {
 
 	handleTreeViewSelectionChange(e) {
 		const requestData = e.itemData;
+		// const requestGridDataSource
 		if (requestData.options) {
 			this.setState({
 				requestData: e.itemData,
 				optionsData: requestData.options,
-				dataSource : e.itemData
+				requestGridDataSource : e.itemData
 
 			});
 		}
