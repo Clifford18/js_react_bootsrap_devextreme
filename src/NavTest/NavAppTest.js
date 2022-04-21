@@ -1,7 +1,6 @@
 import React from 'react';
 
 import TreeView from 'devextreme-react/tree-view';
-import TabPanel from 'devextreme-react/tab-panel';
 import {REQUESTLOGSTYPES} from './NavDataTest.js';
 import DataGrid, {Column, FilterRow, Lookup, Pager, Paging} from "devextreme-react/data-grid";
 
@@ -10,14 +9,12 @@ export default class NavAppTest extends React.Component {
 		super(props);
 
 		this.state = {
-			tabPanelIndex: 0,
 			requestData: REQUESTLOGSTYPES[0].items[0],
 			optionsData: REQUESTLOGSTYPES[0].items[0].options,
 			dataSource : requestDataSource
 		};
 
 		this.handleTreeViewSelectionChange = this.handleTreeViewSelectionChange.bind(this);
-		this.handleTabPanelSelectionChange = this.handleTabPanelSelectionChange.bind(this);
 	}
 
 	render() {
@@ -125,7 +122,6 @@ export default class NavAppTest extends React.Component {
 		const requestData = e.itemData;
 		if (requestData.options) {
 			this.setState({
-				tabPanelIndex: 0,
 				requestData: e.itemData,
 				optionsData: requestData.options,
 				dataSource : e.itemData
@@ -134,30 +130,6 @@ export default class NavAppTest extends React.Component {
 		}
 	}
 
-	handleTabPanelSelectionChange(e) {
-		this.setState({
-			tabPanelIndex: e.value
-		});
-	}
-}
-
-function renderPanelItemTitle(item) {
-	return <span className="tab-panel-title">{item.text}</span>;
-}
-
-function renderPanelItem(city) {
-	return (
-		<React.Fragment>
-			<div className="right-content">
-				<div>
-					<b>{(city.capital) ? 'Capital. ' : ''}</b>{city.description}
-				</div>
-				<div className="stats">
-
-				</div>
-			</div>
-		</React.Fragment>
-	);
 }
 
 const requestDataSource = {
