@@ -3,6 +3,7 @@ import React from 'react';
 import TreeView from 'devextreme-react/tree-view';
 import TabPanel from 'devextreme-react/tab-panel';
 import { continents } from './NavData.js';
+import './NavStyles.css'
 
 class NavApp extends React.Component {
 	constructor(props) {
