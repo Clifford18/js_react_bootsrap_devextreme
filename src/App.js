@@ -14,11 +14,11 @@ function App() {
 		<div>
 			<HeaderComponent/>
 			<div className="container">
+				<NavAppTest/>
 
-				<ScrollViewApp/>
 			</div>
 			<div className="container">
-				<NavAppTest/>
+				<ScrollViewApp/>
 
 
 			</div>
