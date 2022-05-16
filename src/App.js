@@ -7,33 +7,37 @@ import NavApp from "./nav/NavApp";
 import ScrollViewApp from "./scrollview/ScrollViewApp";
 import {AxiosTest} from "./components/AxiosTest";
 import NavAppTest from "./NavTest/NavAppTest";
+import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
 
 
 function App() {
 	return (
-		<div>
-			<HeaderComponent/>
-			<div className="container">
-				<NavAppTest/>
-
-			</div>
-			<div className="container">
-				<ScrollViewApp/>
-
-
-			</div>
+		<Router>
 			<div>
-				<RequestsDataComponent/>
-				<RequestsDataTest/>
-				<Task/>
-				<NavApp/>
-				<AxiosTest/>
-				<NavAppTest/>
+				<HeaderComponent/>
+				<div className="container">
+					<NavAppTest/>
+
+				</div>
+				<div className="container">
+					<ScrollViewApp/>
+
+
+				</div>
+				<div>
+					<RequestsDataComponent/>
+					<RequestsDataTest/>
+					<Task/>
+					<NavApp/>
+					<AxiosTest/>
+					<NavAppTest/>
+				</div>
+				<FooterComponent/>
+
+
 			</div>
-			<FooterComponent/>
 
-
-		</div>
+		</Router>
 
 	);
 }
