@@ -8,31 +8,33 @@ import ScrollViewApp from "./scrollview/ScrollViewApp";
 import {AxiosTest} from "./components/AxiosTest";
 import NavAppTest from "./NavTest/NavAppTest";
 import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
+import JsonComponent from "./components/JsonData/JsonComponent";
 
 
 function App() {
 	return (
 		<Router>
 			<div>
-				<HeaderComponent/>
-				<div className="container">
-					<NavAppTest/>
+				{/*<HeaderComponent/>*/}
+				{/*<div className="container">*/}
+				{/*	<NavAppTest/>*/}
 
-				</div>
-				<div className="container">
-					<ScrollViewApp/>
+				{/*</div>*/}
+				{/*<div className="container">*/}
+				{/*	<ScrollViewApp/>*/}
 
 
-				</div>
-				<div>
-					<RequestsDataComponent/>
-					<RequestsDataTest/>
-					<Task/>
-					<NavApp/>
-					<AxiosTest/>
-					<NavAppTest/>
-				</div>
-				<FooterComponent/>
+				{/*</div>*/}
+				{/*<div>*/}
+				{/*	<RequestsDataComponent/>*/}
+				{/*	<RequestsDataTest/>*/}
+				{/*	<Task/>*/}
+				{/*	<NavApp/>*/}
+				{/*	<AxiosTest/>*/}
+				{/*	<NavAppTest/>*/}
+					<JsonComponent/>
+				{/*</div>*/}
+				{/*<FooterComponent/>*/}
 
 
 			</div>
