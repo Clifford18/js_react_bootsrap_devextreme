@@ -3,7 +3,7 @@ import React from 'react';
 import TreeView from 'devextreme-react/tree-view';
 import {REQUESTLOGSTYPES} from './NavDataTest.js';
 import DataGrid, {Column, FilterRow, Lookup, Pager, Paging} from "devextreme-react/data-grid";
-import './NavTestStyles.css'
+import './NavTestStyles.css';
 
 export default class NavAppTest extends React.Component {
 	constructor(props) {
@@ -12,7 +12,7 @@ export default class NavAppTest extends React.Component {
 		this.state = {
 			requestData: REQUESTLOGSTYPES[0].items[0],
 			optionsData: REQUESTLOGSTYPES[0].items[0].options,
-			requestGridDataSource : requestDataSource
+			requestGridDataSource: requestDataSource
 		};
 
 		this.handleTreeViewSelectionChange = this.handleTreeViewSelectionChange.bind(this);
@@ -40,7 +40,7 @@ export default class NavAppTest extends React.Component {
 					</div>
 
 					<DataGrid
-						id = "gridContainer"
+						id="gridContainer"
 						className={'dx-card wide-card'}
 						dataSource={requestGridDataSource}
 						showBorders={true}
@@ -127,7 +127,7 @@ export default class NavAppTest extends React.Component {
 			this.setState({
 				requestData: e.itemData,
 				optionsData: requestData.options,
-				requestGridDataSource : e.itemData
+				requestGridDataSource: e.itemData
 
 			});
 		}
