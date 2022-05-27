@@ -8,7 +8,7 @@ import ScrollViewApp from "./scrollview/ScrollViewApp";
 import {AxiosTest} from "./components/AxiosTest";
 import NavAppTest from "./NavTest/NavAppTest";
 import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
-import JsonComponent from "./components/JsonData/JsonComponent";
+import JsonComponent from "./components/jsondata/JsonComponent";
 
 
 function App() {
