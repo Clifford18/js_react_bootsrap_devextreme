@@ -9,7 +9,6 @@ import {AxiosTest} from "./components/AxiosTest";
 import NavAppTest from "./NavTest/NavAppTest";
 import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
 import JsonComponent from "./components/jsondata/JsonComponent";
-import CustomJsonComponent from "./components/customjsondata/CustomJsonComponent";
 
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
 			<div>
 				{/*<HeaderComponent/>*/}
 				{/*<div className="container">*/}
-				{/*	<NavAppTest/>*/}
+					<NavAppTest/>
 
 				{/*</div>*/}
 				{/*<div className="container">*/}
@@ -34,7 +33,7 @@ function App() {
 				{/*	<AxiosTest/>*/}
 				{/*	<NavAppTest/>*/}
 				{/*	<JsonComponent/>*/}
-				<CustomJsonComponent/>
+				{/*<CustomJsonComponent/>*/}
 				{/*</div>*/}
 				{/*<FooterComponent/>*/}
 
